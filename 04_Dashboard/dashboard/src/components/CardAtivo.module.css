@@ -1,0 +1,20 @@
+.card {
+  background-color: var(--fundo-card);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.titulo {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.conteudo {
+  font-size: 0.95rem;
+}

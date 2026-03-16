@@ -1,14 +1,28 @@
-import { Heading } from './components/Heading.jsx'
+import './styles/theme.css';
+import { CardAtivo } from './components/CardAtivo.jsx';
+import { Heading } from './components/Heading.jsx';
 
 export function App() {
   return (
-    <>
-      <h1>Helllo</h1>
-      <div>
-        <Heading />
-      </div>
-    </>
-  )
-}
+    <div className="container">
+      <Heading>💰 Meu Portfólio 2026</Heading>
 
-export default App
+      <div className="grid">
+        <CardAtivo titulo="Bitcoin (BTC) 🚀">
+          <p>Preço: R$ 350.000,00</p>
+          <span style={{ color: 'var(--alta)' }}>+5.2% hoje</span>
+        </CardAtivo>
+
+        <CardAtivo titulo="Fundo Imobiliário (HGLG11) 🏢">
+          <p>Dividendo: R$ 1,10</p>
+          <span style={{ color: 'var(--alta)' }}>Rendimento estável</span>
+        </CardAtivo>
+
+        <CardAtivo titulo="Empresa X (VALE3) 📉">
+          <p>Preço: R$ 65,20</p>
+          <span style={{ color: 'var(--baixa)' }}>-1.8% hoje</span>
+        </CardAtivo>
+      </div>
+    </div>
+  );
+}

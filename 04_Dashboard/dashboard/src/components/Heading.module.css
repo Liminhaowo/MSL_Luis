@@ -1,0 +1,16 @@
+.heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.normal {
+  color: #2c3e50;
+}
+
+.lucro {
+  color: blue;
+}
+
+.prejuizo {
+  color: red;
+}
